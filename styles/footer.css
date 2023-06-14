@@ -1,0 +1,43 @@
+footer {
+    padding: 1.5rem;
+}
+
+footer h5.title {
+    font-size: 1.125rem;
+    color: var(--dark);
+}
+
+footer h5.description {
+    font-size: 1rem;
+    color: var(--gray-blue);
+    white-space: pre-line;
+}
+
+footer ul li>a {
+    color: var(--dark);
+}
+
+footer span.copy-rights {
+    color: var(--gray-blue);
+    font-size: 1rem;
+}
+
+footer .social-container {
+    margin-top: 5rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+    footer .description {
+        padding: 1.5rem;
+        text-align: center;
+        margin-bottom: 0rem;
+        padding-bottom: 1rem;
+    }
+
+    footer .social-container {
+        text-align: center;
+        margin-top: 0rem;
+        padding: 1rem;
+    }
+}

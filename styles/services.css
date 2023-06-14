@@ -1,0 +1,58 @@
+.services {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.services .title-container {
+    margin-bottom: 2.5rem;
+}
+
+.services .services-title {
+    font-size: 1.5rem;
+}
+
+.services .card {
+    height: 8rem;
+    width: 40rem;
+
+}
+
+.services .card:hover {
+    border-color: var(--gray-blue);
+    box-shadow: -4px 7px 16px 0px rgba(195,206,226, 0.64);
+    -webkit-box-shadow: -4px 7px 16px 0px rgba(195,206,226, 0.64);
+    -moz-box-shadow: -4px 7px 16px 0px rgba(195,206,226, 0.64);
+}
+
+.services .card .row {
+    align-items: center;
+    height: 100%;
+}
+
+.services .card .card-text {
+    font-size: 1rem;
+    color: var(--light-dark);
+}
+
+.services .card .card-title {
+    font-size: 1.125rem;
+    color: var(--dark);
+}
+
+@media only screen and (max-width: 600px) {
+    .services .title-container {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1400px) {
+    .services .card {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width:1200px) {
+    .services .card {
+        width: 100%;
+    }
+}

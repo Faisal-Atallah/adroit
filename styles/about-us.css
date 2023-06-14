@@ -1,0 +1,64 @@
+.about-us {
+    padding: 7rem;
+}
+
+.about-us h2 {
+    font-size: 1.5rem;
+    color: var(--dark);
+    white-space: pre-line;
+}
+
+.about-us p {
+    font-size: 1rem;
+    color: var(--dark);
+}
+
+.about-us .about-us-splide .slide__content img {
+    width: 8rem;
+    height: 8rem;
+}
+
+.about-us .about-us-splide {
+    margin-top: 5rem;
+}
+
+.about-us .about-us-description {
+    margin-top: 2.5rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .about-us h2.strategy-title {
+        margin-bottom: 3rem;
+    }
+
+    .about-us .about-us-splide {
+        margin-top: 3rem;
+    }
+
+    .about-us .order-xs-1 {
+        order: 1;
+    }
+
+    .about-us .order-xs-2 {
+        order: 2;
+    }
+
+    .about-us .order-xs-3 {
+        order: 3;
+    }
+
+    .about-us .order-xs-4 {
+        order: 4;
+    }
+
+    .about-us {
+        padding: 1.5rem;
+    }
+
+    .about-us .about-us-splide .slide__content img {
+        width: 5.375rem;
+        height: 5.375rem;
+    }
+}

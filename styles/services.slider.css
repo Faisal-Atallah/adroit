@@ -1,0 +1,53 @@
+.mobile-services .card {
+    border: none;
+    border-radius: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-services .card img {
+    width: 13%;
+    margin: 1rem auto;
+}
+
+.mobile-services .card .title {
+    font-size: 1.125rem;
+    color: var(--dark);
+}
+
+.mobile-services .card .description {
+    font-size: 1rem;
+    color: var(--light-dark);
+}
+
+.mobile-services .splide__arrows {
+    position: absolute;
+    left: 50%;
+    top: 113%;
+}
+
+.mobile-services .splide__slide {
+    height: 16rem !important;
+}
+
+.mobile-services .splide__arrow {
+    border-radius: 4px;
+    border: solid 1px var(--gray-blue);
+    background-color: var(--transparent);
+    width: 8.8rem;
+    height: 2rem;
+}
+
+.mobile-services .splide__arrow svg {
+    display: none;
+}
+
+.mobile-services .splide__arrow--prev {
+    left: 0.2rem;
+    background: url('/images/icons/right-arrow.svg') no-repeat center center;
+}
+
+.mobile-services .splide__arrow--next {
+    right: 0.2rem;
+    background: url('/images/icons/left-arrow.svg') no-repeat center center;
+}

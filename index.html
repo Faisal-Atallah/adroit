@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Almarai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/hero-section.css">
+    <link rel="stylesheet" href="./styles/side-nav.css">
+    <link rel="stylesheet" href="./styles/about-us.css">
+    <link rel="stylesheet" href="./styles/services.css">
+    <link rel="stylesheet" href="./styles/services.slider.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/colors.css">
+
+</head>
+
+<body>
+
+    <!-- SideNav -->
+    <div class="side-nav offcanvas offcanvas-start w-100" tabindex="-1" id="offcanvas" data-bs-keyboard="false"
+        data-bs-backdrop="false">
+        <!-- Brand -->
+        <div class="offcanvas-header">
+            <div class="row brand-container">
+                <div>
+                    <img alt="logo" class="img-fluid float-left" src="./images/flag.svg" />
+
+                    <a class="navbar-brand fw-bold" href="#">XCompany
+                    </a>
+                    <p class="navbar-brand-description fw-normal">Motivational software solution</p>
+                </div>
+
+            </div>
+            <!-- Close Sidenav -->
+            <div data-bs-theme="white">
+                <button type="button" class="close-sidenav-btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <img src="./images/icons/close.svg" alt="close">
+                </button>
+            </div>
+
+        </div>
+
+        <div class="sidenav-body">
+            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center" id="menu">
+                <li class="nav-item mb-2">
+                    <a href="#" class="text-uppercase nav-link fw-bold">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="#submenu1" data-bs-toggle="collapse" class="nav-link text-uppercase fw-bold">
+                        About us </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link fw-bold text-uppercase">
+                        Services</a>
+                </li>
+
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link fw-bold text-uppercase">
+                        Protofolio
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link fw-bold text-uppercase">
+                        Blog
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link fw-bold text-uppercase">
+                        Contact us
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link fw-bold text-uppercase">
+                        Useful links
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn cta" type="submit">Start a Project</button>
+                </li>
+            </ul>
+
+
+            <div class="btn-group dropup language-dropdown-container p-4 w-100">
+                <button type="button" class="btn btn-secondary dropdown-toggle bg-transparent" data-bs-toggle="dropdown"
+                    data-bs-display="static" aria-expanded="false">
+                    <span><img src="./images/flag.svg" alt="flag"> </span> Change Language
+                </button>
+                <ul class="dropdown-menu dropdown-menu-sm-center">
+                    <li><button class="dropdown-item" type="button">France</button></li>
+                    <li><button class="dropdown-item" type="button">English</button></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- /Sidenav -->
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-transparent p-0">
+        <div class="navbar-container container-fluid mt-4 position-absolute top-100 start-0">
+            <div class="row brand-container">
+                <div>
+
+                    <img alt="logo" class="img-fluid float-left" src="./images/flag.svg" />
+
+                    <a class="navbar-brand fw-bold" href="#">XCompany
+                    </a>
+                    <p class="navbar-brand-description fw-normal">Motivational software solution</p>
+                </div>
+
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="justify-content-end collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav px-2">
+                    <li class="nav-item px-2">
+                        <a class="nav-link fw-normal" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link fw-normal" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link fw-normal" href="#">Services</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link fw-normal">Protofolio</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link fw-normal">Blog</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link fw-normal">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item dropdown px-2">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./images/flag.svg" alt="logo" />
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Arabic</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <button class="btn cta" type="submit">Start a Project</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- / Navbar -->
+
+    <main>
+        <!-- Hero Section -->
+        <div class="hero position-relative overflow-hidden  text-start bg-body-tertiary">
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 p-lg-5 my-5">
+                    <h1 class="title fw-bold text-uppercase">NEED HELP TO BUILD YOUR WEB APPLICATION?</h1>
+                    <p class="fw-normal description d-none d-md-block">Lorem Ipsum is simply dummy text of
+                        the printing and
+                        typesetting
+                        industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+
+                    <p class="fw-normal description d-none d-md-block">standard dummy text ever since the 1500s
+                        We’re a full-stack
+                        JavaScript
+                        development company, creating serverless cross-platform and web applications.</p>
+
+                    <button class="btn hero-cta d-none d-md-block">
+                        <div class="d-flex justify-content-between">
+                            <span class="fw-bold">Let's talk</span>
+                            <span class="align-middle"><img class="align-middle" src="./images/arrow-right.png"
+                                    alt="arrow-right"></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container p-4 d-lg-none d-md-none">
+            <div class="row mt-5">
+                <p class="fw-normal mb-4 description">Lorem Ipsum is simply dummy text of
+                    the printing and
+                    typesetting
+                    industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+
+                <p class="fw-normal description">standard dummy text ever since the 1500s
+                    We’re a full-stack
+                    JavaScript
+                    development company, creating serverless cross-platform and web applications.</p>
+            </div>
+            <div class="row p-2">
+                <button class="btn hero-cta">
+                    <div class="d-flex justify-content-between">
+                        <span class="fw-bold">Let's talk</span>
+                        <span class="align-middle"><img class="align-middle" src="./images/arrow-right.png"
+                                alt="arrow-right"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <!-- / Hero Section-->
+
+        <!-- About us -->
+        <div class="container-fluid about-us">
+            <div class="row">
+                <div class="col-md-6 order-xs-1">
+                    <h2 class="fw-bold">Why work with us ?
+                    </h2>
+                    <p class="fw-normal">type and scrambled it to make a type specimen book. It has survived not only
+                        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        It was popularised
+                    </p>
+                </div>
+
+                <div class="col-md-6 order-xs-3">
+                    <h2 class="fw-bold strategy-title">We can do it for you with our special strategy</h2>
+                    <p class="fw-normal">ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots
+                        in a piece of classical Latin literature from 45 BC, making it over 2000 years old</p>
+                </div>
+                <!-- About Us Slider -->
+                <div class="col-md-12 order-xs-2">
+                    <div class="about-us-splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <div class="slide__content">
+                                            <img src="./images/slide.svg" alt="stripe">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <div class="slide__content">
+                                            <img src="./images/slide.svg" alt="stripe">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <div class="slide__content">
+                                            <img src="./images/slide.svg" alt="stripe">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <div class="slide__content">
+                                            <img src="./images/slide.svg" alt="stripe">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <div class="slide__content">
+                                            <img src="./images/slide.svg" alt="stripe">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <div class="slide__content">
+                                            <img src="./images/slide.svg" alt="stripe">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <div class="slide__content">
+                                            <img src="./images/slide.svg" alt="stripe">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <div class="slide__content">
+                                            <img src="./images/slide.svg" alt="stripe">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- / About Us Slider -->
+
+                <!-- About us Description -->
+                <div class="col-md-12 fw-normal order-xs-4">
+                    <p class="about-us-description">The standard chunk of Lorem Ipsum used since the 1500s is reproduced
+                        below for those interested.
+                        Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced
+                        in their exact original form, accompanied by English versions from the 1914 translation by H.
+                        Rackham.</p>
+                </div>
+                <!-- / About us Description -->
+            </div>
+        </div>
+        <!-- / About us -->
+        <!-- Services -->
+        <div class="container services">
+            <div class="row title-container">
+                <h2 class="services-title text-center fw-bold">Our Services</h2>
+            </div>
+
+            <!-- Desktop  Services -->
+            <div class="row gx-1 d-none d-md-flex">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4 text-center">
+                                <img src="./images/services-icons/team.svg" class="img-fluid mx-auto d-block"
+                                    alt="team">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">The technical team and coaching for big and
+                                        cross-platform
+                                        projects</h5>
+                                    <p class="card-text"></p>
+                                    <p class="card-text fw-normal">
+                                        object-oriented, high-level programming
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./images/services-icons/web.svg" class="img-fluid mx-auto d-block" alt="web">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Web Applications</h5>
+                                    <p class="card-text"></p>
+                                    <p class="card-text fw-normal">object-oriented, high-level
+                                        programming</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gx-1 d-none d-md-flex">
+                <div class="col-lg-6 col-md-12">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4 text-center">
+                                <img src="./images/services-icons/website.svg" class="img-fluid mx-auto d-block"
+                                    alt="website">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Website</h5>
+                                    <p class="card-text"></p>
+                                    <p class="card-text fw-normal">
+                                        object-oriented, high-level programming
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./images/services-icons/messenger.svg" class="img-fluid mx-auto d-block"
+                                    alt="messenger">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">RTC protocol software solutions (Voice and Video) -
+                                        an end to
+                                        end communication</h5>
+                                    <p class="card-text"></p>
+                                    <p class="card-text fw-normal">object-oriented, high-level
+                                        programming</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gx-1 d-none d-md-flex">
+                <div class="col-lg-6 col-md-12">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4 text-center">
+                                <img src="./images/services-icons/pwa.svg" class="img-fluid mx-auto d-block" alt="pwa">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">PWA: Progressive web apps</h5>
+                                    <p class="card-text"></p>
+                                    <p class="card-text fw-normal">
+                                        object-oriented, high-level programming
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./images/services-icons/solutions.svg" class="img-fluid mx-auto d-block"
+                                    alt="solutions">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Sip protocol software solutions (Voice and Video)
+                                    </h5>
+                                    <p class="card-text"></p>
+                                    <p class="card-text fw-normal">object-oriented, high-level
+                                        programming</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gx-1 d-none d-md-flex">
+                <div class="col-lg-6  col-md-12">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4 text-center">
+                                <img src="./images/services-icons/mobile.svg" class="img-fluid mx-auto d-block"
+                                    alt="mobile">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Mobile Applications</h5>
+                                    <p class="card-text"></p>
+                                    <p class="card-text fw-normal">
+                                        object-oriented, high-level programming
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./images/services-icons/rtc.svg" class="img-fluid mx-auto d-block" alt="rtc">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Private and secure messenger solutions</h5>
+                                    <p class="card-text"></p>
+                                    <p class="card-text fw-normal">
+                                        object-oriented, high-level
+                                        programming
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- / Desktop  Services-->
+
+            <!-- Mobile Services -->
+            <div class="p-3 d-lg-none d-md-none">
+                <div class="mobile-services">
+                    <div class="row">
+                        <div class="splide">
+                            <div class="splide__track">
+                                <div class="splide__list">
+                                    <div class="col-sm-4 splide__slide">
+                                        <div class="card">
+                                            <img src="./images/services-icons/team.svg" class="card-img-top img-fluid"
+                                                alt="team">
+                                            <div class="card-body">
+                                                <p class="card-text title text-center fw-bold">
+                                                    The technical team and coaching for big and cross-platform projects
+                                                </p>
+                                                <p class="card-text description text-center fw-normal">object-oriented,
+                                                    high-level programming
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 splide__slide">
+                                        <div class="card">
+                                            <img src="./images/services-icons/web.svg" class="card-img-top img-fluid"
+                                                alt="team">
+                                            <div class="card-body">
+                                                <p class="card-text title text-center fw-bold">
+                                                    Web Applications
+                                                </p>
+                                                <p class="card-text description text-center fw-normal">object-oriented,
+                                                    high-level programming
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4 splide__slide">
+                                        <div class="card">
+                                            <img src="./images/services-icons/website.svg"
+                                                class="card-img-top img-fluid" alt="team">
+                                            <div class="card-body">
+                                                <p class="card-text title text-center fw-bold">
+                                                    Website
+                                                </p>
+                                                <p class="card-text description text-center fw-normal">object-oriented,
+                                                    high-level programming
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4 splide__slide">
+                                        <div class="card">
+                                            <img src="./images/services-icons/rtc.svg" class="card-img-top img-fluid"
+                                                alt="team">
+                                            <div class="card-body">
+                                                <p class="card-text title text-center fw-bold">
+                                                    RTC protocol software solutions (Voice and Video) - an end to end
+                                                    communication
+                                                </p>
+                                                <p class="card-text description text-center fw-normal">object-oriented,
+                                                    high-level programming
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4 splide__slide">
+                                        <div class="card">
+                                            <img src="./images/services-icons/mobile.svg" class="card-img-top img-fluid"
+                                                alt="team">
+                                            <div class="card-body">
+                                                <p class="card-text title text-center fw-bold">
+                                                    Mobile Applications
+                                                </p>
+                                                <p class="card-text description text-center fw-normal">object-oriented,
+                                                    high-level programming
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4 splide__slide">
+                                        <div class="card">
+                                            <img src="./images/services-icons/solutions.svg"
+                                                class="card-img-top img-fluid" alt="team">
+                                            <div class="card-body">
+                                                <p class="card-text title text-center fw-bold">
+                                                    Private and secure messenger solutions
+                                                </p>
+                                                <p class="card-text description text-center fw-normal">object-oriented,
+                                                    high-level programming
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4 splide__slide">
+                                        <div class="card">
+                                            <img src="./images/services-icons/pwa.svg" class="card-img-top img-fluid"
+                                                alt="team">
+                                            <div class="card-body">
+                                                <p class="card-text title text-center fw-bold">
+                                                    PWA: Progressive web apps
+                                                </p>
+                                                <p class="card-text description text-center fw-normal">object-oriented,
+                                                    high-level programming
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4 splide__slide">
+                                        <div class="card">
+                                            <img src="./images/services-icons/messenger.svg"
+                                                class="card-img-top img-fluid" alt="team">
+                                            <div class="card-body">
+                                                <p class="card-text title text-center fw-bold">
+                                                    Sip protocol software solutions (Voice and Video)
+                                                </p>
+                                                <p class="card-text description text-center fw-normal">object-oriented,
+                                                    high-level programming
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- / Mobile Services -->
+
+        </div>
+        <!-- / Services -->
+
+    </main>
+
+    <footer class="container">
+        <div class="row">
+            <div class="col-12 col-md">
+                <h5 class="fw-normal description">
+                    Become the best.
+                    with these recommendations.
+                    Reference site about.
+                </h5>
+
+                <div class="social-container">
+                    <span class="mb-3 mb-md-0 fw-normal copy-rights">&copy; 2019 XCompany. All rights reserved</span>
+
+                    <ul class="nav mt-3 col-md-12 col-sm-6 justify-content-between list-unstyled d-flex">
+                        <li class="mr-3"><a href="#">
+                                <img src="./images/social-icons/github.svg" alt="github">
+                            </a>
+                        </li>
+                        <li class="ms-3"><a href="#">
+                                <img src="./images/social-icons/dribbble.svg" alt="dribbble">
+                            </a>
+                        </li>
+                        <li class="ms-3"><a href="#">
+                                <img src="./images/social-icons/linkedIn.svg" alt="linkedIn">
+                            </a>
+                        </li>
+                        <li class="ms-3"><a href="#">
+                                <img src="./images/social-icons/pinterest.svg" alt="pinterest">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-md d-none d-md-block">
+                <h5 class="fw-bold title">Blog</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-decoration-none" href="#">Something about User Exprience</a></li>
+                    <li><a class="text-decoration-none" href="#">E-Learning is rising</a></li>
+                    <li><a class="text-decoration-none" href="#">Why Can’t E-commerce</a></li>
+                    <li><a class="text-decoration-none" href="#">Legancy System Migrate</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md d-none d-md-block">
+                <h5 class="fw-bold title">Our Company</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-decoration-none" href="#">Job Offers</a></li>
+                    <li><a class="text-decoration-none" href="#">Customers Support</a></li>
+                    <li><a class="text-decoration-none" href="#">CRM</a></li>
+                    <li><a class="text-decoration-none" href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md d-none d-md-block">
+                <h5 class="fw-bold title">Useful</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-decoration-none" href="#">Github Resources</a></li>
+                    <li><a class="text-decoration-none" href="#">Free Resources</a></li>
+                    <li><a class="text-decoration-none" href="#">Component</a></li>
+                    <li><a class="text-decoration-none" href="#">Shared Directory</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+    <script src="./scripts/about-us-slider.js"></script>
+    <script src="./scripts/services.slider.js"></script>
+
+
+</body>
+
+</html>

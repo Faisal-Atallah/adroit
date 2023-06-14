@@ -1,0 +1,66 @@
+ .navbar .navbar-container {
+     z-index: 1;
+     padding: 1rem 2rem;
+ }
+
+ .navbar-brand {
+     font-size: 1.25rem;
+     padding-bottom: 0;
+     padding-left: 0.8rem;
+     color: var(--dark);
+ }
+
+ .navbar-brand-description {
+     font-size: 0.75rem;
+     text-indent: 1.2rem;
+     padding-left: 0.8rem;
+     color: var(--gray-blue);
+ }
+
+ .nav-item .nav-link {
+     font-size: 0.875rem;
+     line-height: 31px;
+     vertical-align: middle;
+     color: var(--grey);
+ }
+
+ .cta {
+     border-radius: 4px;
+     background-color: var(--green);
+     border-color: var(--green);
+     width: 8.125rem;
+     height: 2rem;
+     color: var(--white);
+     line-height: 0.75rem;
+ }
+
+ .cta:hover,
+ .cta:active,
+ .cta:focus {
+     background-color: var(--green);
+     border-color: var(--green);
+     color: var(--white);
+ }
+
+ .navbar-toggler {
+     position: relative;
+     bottom: 10px;
+     border: none;
+     padding-right: 1.9rem;
+ }
+
+ .navbar-toggler :active .navbar-toggler :focus,
+ .navbar-toggler :hover {
+     border: none;
+     outline: none;
+ }
+
+ @media only screen and (max-width: 600px) {
+     .navbar .navbar-container {
+         padding: 0.5rem;
+     }
+
+     .navbar .brand-container {
+         padding-left: 1.9rem;
+     }
+ }
