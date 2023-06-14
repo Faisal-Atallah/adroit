@@ -44,10 +44,10 @@
 
 .mobile-services .splide__arrow--prev {
     left: 0.2rem;
-    background: url('/images/icons/right-arrow.svg') no-repeat center center;
+    background: url('/assets/images/icons/right-arrow.svg') no-repeat center center;
 }
 
 .mobile-services .splide__arrow--next {
     right: 0.2rem;
-    background: url('/images/icons/left-arrow.svg') no-repeat center center;
+    background: url('/assets/images/icons/left-arrow.svg') no-repeat center center;
 }
