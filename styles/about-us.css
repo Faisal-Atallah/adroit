@@ -29,6 +29,10 @@
 
 @media only screen and (max-width: 600px) {
 
+    .about-us .slider-col {
+        padding: 0;
+    }
+
     .about-us h2.strategy-title {
         margin-bottom: 3rem;
     }
