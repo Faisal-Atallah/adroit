@@ -12,6 +12,21 @@
     font-size: 1.5rem;
 }
 
+.side-nav .sidenav-cta {
+    font-size: 1.125rem;
+    color: var(--white);
+    background-color: var(--green);
+    width: 10.625rem;
+    height: 2.813rem;
+}
+
+.side-nav .sidenav-cta:hover,
+.side-nav .sidenav-cta:active,
+.side-nav .sidenav-cta:focus {
+    color: var(--white);
+    background-color: var(--green);
+}
+
 .side-nav .close-sidenav-btn {
     position: relative;
     bottom: 12px;
