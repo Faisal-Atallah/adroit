@@ -22,7 +22,7 @@ var splide = new Splide(".about-us-splide", {
         height: '12rem',
     },
     480: {
-        perPage: 2,
+        perPage: 3,
         gap: '1.7rem',
         height: '10rem',
     }}
